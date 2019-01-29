@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Regist-Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat");
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      img {
+        float: left;
+        width: 50%;
+        height: auto;
+      }
+      .fbw6-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 45%;
+        background-color: rgba(79, 236, 215, 0.6);
+        width: 100px;
+        height: 100px;
+        box-shadow: 2px, 2px, 3px, grey;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px grey;
+      }
+      header {
+        width: 50%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 0px;
+        color: rgb(185, 179, 179);
+      }
+      header button {
+        font-size: 15px;
+        color: white;
+        background-color: rgba(79, 236, 215, 0.8);
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px grey;
+        font-weight: bold;
+        margin-top: 10px;
+        text-shadow: 1px 1px 1px grey;
+      }
+      header h4 {
+        text-align: end;
+        width: 80%;
+        margin-right: 20px;
+        margin-top: 30px;
+      }
+
+      header button a {
+        text-decoration: none;
+        color: white;
+      }
+      main {
+        float: right;
+        width: 50%;
+      }
+      main form {
+        text-align: center;
+        color: rgb(107, 105, 105);
+      }
+      .info-form h1 {
+        margin: 50px 10%;
+        text-align: middle;
+      }
+      .info-form h3 {
+        margin: 10px 20%;
+        text-align: left;
+      }
+      .info-form input {
+        width: 60%;
+        height: 40px;
+        align-content: center;
+        font-size: 18px;
+        padding: 2px;
+        margin: 2px 20%;
+        background-origin: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      .update-agree {
+        font-size: 15px;
+        color: rgb(107, 103, 103);
+        margin: 10px 40px;
+      }
+      .update-agree a {
+        color: grey;
+      }
+      .continue-button {
+        font-size: 17px;
+        color: white;
+        background-color: rgba(79, 236, 215, 0.8);
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px grey;
+        font-weight: bolder;
+        text-shadow: 1px 1px 1px grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img align="left" src="https://source.unsplash.com/random/500x700" />
+    <button class="fbw6-button"><h2>FBW6</h2></button>
+
+    <header class="signin">
+      <h4>Already have an account?</h4>
+      <button><a href="./home.html">SIGN IN</a></button>
+    </header>
+
+    <main>
+      <form method="GET">
+        <div class="info-form">
+          <h1>Start Build Web With Us</h1>
+          <h3>EMAIL</h3>
+          <input type="email" name="email" placeholder="joe.smith@fbw6.com" />
+          <br /><br />
+          <h3>USERNAME</h3>
+          <input type="text" name="username" placeholder="Joe Smith" />
+          <br /><br />
+          <h3>PASSWORD</h3>
+          <input
+            type="password"
+            name="pw"
+            placeholder="Enter 6 digitals"
+            maxlength="6"
+          />
+        </div>
+        <br /><br />
+        <div class="update-agree">
+          <input type="checkbox" name="disagreed" value="disagree" /> I'm not
+          interested in updates about FBW6 in products and services.
+          <a href="">Privacy Policy</a> <br />
+          <p>
+            By clicking "Continue" I agree to FBW6's
+            <a href="">Terms of Services</a>.
+          </p>
+        </div>
+        <br />
+        <input type="submit" value="Continue" class="continue-button" />
+      </form>
+    </main>
+  </body>
+</html>
